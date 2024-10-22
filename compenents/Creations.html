@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creation</title>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <style>
+    body {
+      background-color: coral;
+    }
+    p {
+      font-size: 2em;
+    }
+    li {
+      margin: 25px;
+      font-size: 1.5em;
+    }
+    footer {
+      text-align: center;
+    }
+    @media screen and (max-width: 900px) {
+      body {
+        font-size: 1.5em; 
+        margin: 20px; 
+      }
+      p {
+        font-size: 1.2em; 
+      }
+      li {
+        font-size: 1.2em; 
+        margin: 15px; 
+      }
+      video {
+        width: 100%; 
+        height: auto; 
+      }
+      footer {
+        font-size: 0.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p>La présentation ou du moins les autres créations 4 se feront sous forme de vidéo d'une durée totale de 1 minute environ</p>
+  <ul>
+    <li><a href="../assets/acceuil-vente-en-ligne.png">CREATION 1</a></li>
+    <li><a href="./Creation-2.html">CREATION 2</a></li>
+    <li>
+      <a href="" onclick="event.preventDefault(); document.getElementById('video1').style.display='block';">CREATION 3</a>
+      <video id="video1" width="320" height="240" controls style="display:none;">
+        <source src="../assets/video-1.mkv" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </li>
+    <li>
+      <a href="" onclick="event.preventDefault(); document.getElementById('video2').style.display='block';">CREATION 4</a>
+      <video id="video2" width="320" height="240" controls style="display:none;">
+        <source src="../assets/video-2.mkv" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </li> 
+  </ul>
+  <footer>
+    &copy; Cedric Dony. Tous droits réservés.
+  </footer> 
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <style>
+        body {
+            background-color: darkorange;
+            font-size: 2em;
+            text-align: center;
+            margin-top: 200px;
+            font-family: 'Raleway', sans-serif;}
+          
+          .info-container, .info-img {
+            margin: 0;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;}
+          
+          .info-container .info1, .info-container .info2, .info-container .info3 {
+            flex: 1;
+            font-size: 1em;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-align: center;
+            margin-top: 10px;}
+          
+          .info-img > div {
+            margin: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;}
+
+          .info-img img {
+            width: 80px;
+            height: auto;
+            margin-bottom: 10px;}
+          @media screen and (max-width: 900px) {
+            body {
+              font-size: 1.5em; 
+              margin-top: 100px; 
+              }
+              .info-img > div {
+                margin: 10px 0;
+                flex-direction: column; 
+              }
+              .info-img img {
+                width: 60px;
+              }
+            }
+            
+    </style>
+</head>
+<body>
+    <div class="info-img">
+        <div>
+            <a href="https://www.google.com/maps/place/21+rue+d'Aubigny,+69003+Lyon" target="_blank">
+          <img src="../assets/domicile.png" alt="domicile">
+          <p class="info1">21 rue d'Aubigny<br>69003 Lyon</p>
+        </a>
+        </div>
+        <div>
+         <a href="mailto:donycedric11@gmail.com?subject=Demande%20de%20contact&body=Bonjour%20Cedric,%0A%0AJe%20vous%20contacter%20concernant..." class="info2">
+          <img src="../assets/envelloppe.png" alt="enveloppe">
+          <p class="info2">donycedric11@gmail.com</p>
+        </a>
+        </div>
+        <div>
+        <a href="tel:+33683683951" class="info3">
+          <img src="../assets/telephone.png" alt="telephone">
+          <p class="info3">06/83/68/39/51</p>
+        </a>
+        </div>
+      </div>    
+</body>
+</html>
+  

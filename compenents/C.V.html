@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C.V</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', sans-serif;} 
+  
+  .info-container a {
+      text-decoration: none; 
+      color: white;} 
+  
+  header {
+      background-color: #782221;
+      text-align: center;
+      padding: 0px;
+      margin: 0;}
+  
+  header img {
+      background-color: black;
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgb(53, 255, 2);}
+  
+  p {
+      font-family:'Raleway', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;}
+  
+  .v {
+      font-family:'Raleway', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;}
+      
+  .b {
+      font-family:'Raleway', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: black;}
+  
+  .experience-item {
+      margin-bottom: 20px;}
+  
+  .cv-container {
+      width: 1160px;
+      margin: 0 auto; 
+      border-right: 10px solid black;}
+  
+  .info-container {
+      margin: 0;
+      background-color: #2c1d27;
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 150px;}
+  
+  .info-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1;}
+  
+  .info1, .info2, .info3 {
+      flex: 1;
+      font-size: large;
+      font-family: 'Arial', sans-serif;
+      color: white;}
+  
+  .info1:hover, .info2:hover, .info3:hover {
+      color: red;} 
+  
+  .info1 {
+      text-align: left;}
+  
+  .info2 {
+      text-align: center;}
+  
+  .info3 {
+      text-align: right;}
+  
+  .columns {
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 0px;
+      box-sizing: border-box;}
+  
+  .column1 {
+      flex: 1;
+      margin: 0;
+      background-color: #782221;
+      color: black;
+      padding: 20px;}
+  
+  .column2 {
+      flex: 2;
+      margin: 0;
+      background-color: white;
+      color: black;
+      padding: 20px;}
+  
+  h1 {
+      font-family: "lato","sans-serif";
+      background-color: #dbc2a4;
+      font-size: 1.5em;
+      margin: 10px 0;
+      color: black;}
+  
+  .column2 h1 {
+      position: relative;
+      padding-left: 40px;
+      margin: 10px 0;}
+  
+  .column2 h1::before {
+      content: ""; 
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%); 
+      width: 30px;
+      height: 100%;
+      background-color: #782221;} 
+  footer {
+      background-color: #782221;
+      color: white;
+      text-align: center;
+      padding: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1160px; 
+      margin: 0 auto;
+      border-right: 10px solid black;}
+      
+  .footer-icon {
+      margin: 40px 20px 0 20px;
+      text-align: center;
+      margin-bottom: 40px;} 
+      
+  .footer-icon img {
+      width: 50px; 
+      height: auto;
+      display: block;
+      margin: 0 auto;} 
+      
+  .footer-icon p {
+      margin: 5px 0 0 0; 
+      font-family: 'Raleway', sans-serif;
+      font-size: 14px;}
+      @media screen and (max-width: 900px) {
+        body {
+          font-size: 14px;
+        }
+      
+        .cv-container {
+          width: 100%;
+          border-right: none;
+          padding: 10px;
+        }
+      
+        header {
+          text-align: center;
+          padding: 10px;
+        }
+      
+        header img {
+          width: 100px;
+          height: 100px;
+        }
+      
+        .info-container {
+          flex-direction: column;
+          align-items: flex-start;
+          height: auto;
+        }
+      
+        .info-section, .info1, .info2, .info3 {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+      
+        .columns {
+          flex-direction: column;
+        }
+      
+        .column1, .column2 {
+          flex: 1;
+          margin: 10px 0;
+          padding: 10px;
+        }
+      
+        footer {
+          flex-direction: column;
+          width: 100%;
+          padding: 10px;
+        }
+      }      
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+  <header>
+    <img src="../assets/photo.jpg" alt="Photo de profil">
+    <p>CEDRIC DONY</p>
+    <p>DEVELOPPEUR WEB/WEB MOBILE</p>
+  </header>
+    <div class="info-container">
+      <div class="info-section">
+          <a href="https://www.google.com/maps/place/21+rue+d'Aubigny,+69003+Lyon" target="_blank">
+              <p class="info1">21 rue d'Aubigny<br>
+                                69003 Lyon</p>
+          </a>
+      </div>
+      <a href="mailto:donycedric11@gmail.com?subject=Demande%20de%20contact&body=Bonjour%20Cedric,%0A%0AJe%20vous%20contacter%20concernant..." class="info2">
+          donycedric11@gmail.com
+      </a>
+      <a href="tel:+33683683951" class="info3">
+          06/83/68/39/51
+      </a>
+  </div>
+  <div class="columns">
+    <div class="column1">
+      <h1>A PROPOS DE</h1>
+      <div class="v">Née le 07 Aout 1988 a Tonnerre<br>
+      située dans le departement de<br>
+      bourgogne (89)
+      <h1>CENTRES D'INTERETS</h1>
+      -jeux video<br>
+      -film<br>-musique<br>-cinema
+      <h1>DIPLOMES OBTENUS</h1>
+     -CAP BOULANGER (2009)</div>
+    </div>
+    <div class="column2">
+      <div class="b">
+      <h1>EXPERIENCES PROFESSIONNELLES</h1>
+      <div class="experience-item">
+      -TECHNICIEN DE SURFACE chez "E.S.N."<br>
+      Avril 2006<br>
+    </div>
+      <div class="experience-item">
+      -MANUTENTIONNAIRE chez "GREVIN DITRIBUTION (leclerc)"<br>
+      de Juillet 2006 à Decembre 2006<br>
+      </div>
+      <div class="experience-item">
+      -INTERIMAIRE chez "MANPOWER"<br>
+      de Fevrier 2007 à Juillet 2007<br>
+      </div>
+      <div class="experience-item">
+      -APPRENTI BOULANGER  chez "BOULANGERIE DE LA FOSSE DIONNE"<br>
+      de Juillet 2007 à Juin 2009<br>
+      </div>
+      <div class="experience-item">
+      -INTERIMAIRE chez "ADECCO"<br>
+      de septembre 2009 à juin 2010<br>
+      </div>
+      <div class="experience-item">
+      -BOULANGER cher "BOULANGERIE THIEBERT"<br>
+      juillet 2010<br>
+      </div>
+      <div class="experience-item">
+      -BOULANGER chez "AUCHAN"<br>
+      de Aout 2010 à Novembre 2010<br>
+      </div>
+      -INTERIMAIRE chez "MANPOWER"<br>
+      de Avril 2012 à Mai 2012<br>
+      </div>
+      <div class="experience-item">
+      BOULANGER chez "LE MOULIN D'ARNAUD"<br>
+      de Aout 2012 à Mars 2015<br>
+      </div>
+      <div class="experience-item">
+      -INTERIMAIRE chez "ADECCO"<br>
+      de Juin 2015 à Septembre 2015<br>
+      </div>
+      <div class="experience-item">
+      -INTERIMAIRE chez "CRIT INTERIM"<br>
+      de Septembre 2015 à Decembre 2016<br>
+      </div>
+      <div class="experience-item">
+      RECONVERSION PROFESSIONNELLES chez "CEF LEARNING"<br>
+      de 2024 à 
+      </div>
+    <h1>DIPLOMES/FORMATIONS</h1>
+    -CAP BOULANGER<br>de 2007 à 2009<br>OBTENUE au "CIFA AUXERRE"
+      <h1>COMPETENCES</h1>
+      (je suis sincerement désolé<br>
+      de ne pas pouvoir vous donner mes competences professionnelles<br>
+      dans ce domaine car<br>
+      malheureusement ceci n'en est qu'a mes debut)
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-icon">
+      <a href= "https://www.instagram.com/" target="_blank">
+    <img src="../assets/instagramm.png" alt="Instagramm">
+    <p>Instagramm</p>
+      </a>
+    </div>
+    <div class="footer-icon">
+      <a href="https://web.telegram.org/" target="_blank">
+    <img src="../assets/telegramm.png" alt="telegramm">
+    <p>telegramm</p>
+      </a>
+    </div>
+    <div class="footer-icon">
+      <a href="https://accounts.snapchat.com/accounts/login" target="_blank">
+    <img src="../assets/snapchat.png" alt="snapchat">
+    <p>snapchat</p>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>

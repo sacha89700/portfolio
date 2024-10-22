@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erreur 404</title>
+  <link rel="stylesheet" href="styles.css" type="css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', sans-serif;
+      background-color: dimgrey;
+      color: aliceblue;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 2em;
+      margin-top: 50px;
+    }
+    
+    p {
+      font-size: 1.5em;
+      margin: 20px;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
+    }
+    
+    @media screen and (max-width: 900px) {
+      body {
+        font-size: 1.2em;
+      }
+    
+      h1 {
+        font-size: 1.8em;
+      }
+    
+      p {
+        font-size: 1.2em;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>Erreur 404</h1>
+  <p>La page que vous cherchez n'existe pas.</p>
+  <img src="../assets/error404.jpg" alt="Erreur 404" style="width:100%; height:auto;">
+  <script src="/node_modules/vue/dist/vue.js"></script>
+</body>
+</html>
